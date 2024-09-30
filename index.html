@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="content">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Savoury Kitchens</title>
+  <link rel="icon" type="image/x-icon" href="photos/images_2.jpeg">
+</head>
+<script type="text/javascript" src="function.js" defer></script>
+<style type="text/css">
+          * {
+ 
+            font-family: 'Poppins', sans-serif;
+
+        }
+	body{
+  margin-top: 1px;
+  padding-left: 1px;
+ 
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background: #3333;
+  font-family: verdana,Arial,sans-serif;
+	}
+  html {
+            scroll-behavior: smooth;
+        }
+  /*styles resposive for device whose screen width is 600px and below */
+      @media screen and (max-width: 600px) {
+    body {
+      width: 100%;
+      height: auto; 
+      margin-left: 0.5%;
+      transform: scale(1); 
+    }
+  }
+        @media screen and (max-width: 450px) {
+    body {
+      width: 100%;
+      height: auto; 
+      margin-left: 0.5%;
+      transform: scale(1); 
+    }
+  }
+
+
+
+
+  header{
+  	width: 100%;
+  	height: 22vw;
+  	background: #2A0134;
+  	
+  	transform: scale(1.0);
+  }
+        @media screen and (max-width: 600px) {
+   header {
+      width: 100%;
+      height: 27vw;
+      transform: scale(1); 
+    }
+  }
+
+  .titles{
+    width: 100%;
+    height: 17vw;
+    display: flex;
+  }
+          @media screen and (max-width: 600px) {
+   .titles {
+      width: 100%;
+      height: 27vw;
+      transform: scale(1); 
+    }
+  }
+  .gallery{
+  	border-radius: 40%;
+  	border: 2px solid white;
+  	margin-left: 2%;
+  	width: 50vw;
+  	height: 10vh;
+  	background: black;
+  	margin-top: 4%;
+  	transform: scale(1.0);
+
+  }
+  .gallery:hover{
+    border: 2px solid red;
+  }
+  .gallery div{
+  	font-size: 100%;
+  	color: white;
+  	text-decoration: none;
+    cursor: pointer;
+  }
+  .gallery div:hover{
+    color: blue;
+  }
+  .gallery  p{
+  	margin-top: 11%;
+  	margin-left: 34%;
+  }
+@media screen and (max-width: 600px){
+  .gallery{
+    width: 41vw;
+    height: 11vw;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .gallery p{
+    margin-top: 15%;
+    margin-right: 3%;
+    font-size: 80%;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 450px){
+  .gallery p{
+    font-size: 60%;
+    margin-top: 15%;
+    margin-left: 24%;
+    transform: scale(1);
+  }
+}
+.logo{
+    padding-left: 13%;
+    margin-top: 2%;
+ width: 40vw;
+    height: 100%;
+  }
+    @media screen and (max-width: 600px){
+      .logo {
+       height: 80%;
+    transform: scale(1); 
+  }
+  }
+  .logo img{
+    margin-top: -2%;
+ width: 40vw;
+    height: 100%;
+    transform: scale(1); 
+  }
+  @media screen and (max-width: 600px){
+      .logo img{
+       width: 30vw;
+    transform: scale(1); 
+  }
+  }
+  .contact {
+
+  	margin-left: 10%;
+  	background: #0002FF;
+  	border-radius: 40%;
+  	border: 2px solid white;
+  	width: 50vw;
+  	height: 10vh;
+  margin-right: 2%;
+  	margin-top: 4%;
+  }
+  @media screen and (max-width: 600px){
+     .contact {
+    width: 41vw;
+    height: 11vw;
+    transform: scale(1);
+  } 
+  }
+  .contact p{
+
+  	color: white;
+  	text-decoration: none;
+  	font-size: 90%;
+  	margin-top: 10%;
+  		font-size: 90%;
+  	margin-left: 15%;
+    font-size: 80%;
+      transform: scale(1); 
+  }
+  .contact:hover{
+    border: 2px solid red;
+  }
+  .contact p:hover{
+    color: peru;
+  }
+   @media screen and (max-width: 840px){
+       .contact  p{
+        margin-top: 5%;
+    margin-left: 12%;
+    font-size: 70%;
+    transform: scale(1);
+    }
+  }
+   @media screen and (max-width: 600px){
+  	   .contact  p{
+        margin-top: 15%;
+    margin-left: 12%;
+    font-size: 60%;
+    transform: scale(1);
+    }
+  }
+     @media screen and (max-width: 450px){
+       .contact  p{
+    font-size: 49%;
+    margin-top: 11%;
+    transform: scale(1);
+    }
+  }
+     @media screen and (max-width: 350px){
+       .contact  p{
+    font-size: 40%;
+    margin-top: 11%;
+    transform: scale(1);
+    }
+  }
+
+  .about{
+    cursor: pointer;
+    transform: scale(1.0);
+  }
+
+ .nav{
+ 		width: 100%;
+  	height: 4.5vh;
+  	
+ }
+         /* Style for the dropdown container */
+        .dropdown {
+                        
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 10vw;
+            margin-top: 10%;
+            margin-left: -15%;
+            
+        }
+        @media screen and (max-width: 600px){
+          .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 20vw;
+            margin-top: 10%;
+            margin-left: -2%;
+            transform: scale(1.0);
+            z-index: 19;
+          }
+        }
+
+        /* Style for individual dropdown items */
+        .dropdown-item {
+            text-decoration: none;
+            display: block;
+        }
+        .option{
+          background-color: black;
+          color: white;
+          margin-top: 5%;
+          font-size: 100%;
+          width: 99%;
+          padding: 1%;
+          cursor: pointer;
+          font-size: 100%;
+          transform: scale(1.0);
+
+        }
+        @media screen and (max-width: 600px){
+        .option{
+          font-size: 100%;
+          transform: scale(1.0);
+        }
+      }
+              @media screen and (max-width: 400px){
+        .option{
+          font-size: 90%;
+          transform: scale(1.0);
+        }
+      }
+        @media screen and (max-width: 350px){
+        .option{
+          font-size: 94%;
+          transform: scale(1.0);
+        }
+        }
+        /* Style for dropdown item on hover */
+        .dropdown-item:hover {
+            background-color: #ddd;
+        }
+ h4{
+  margin-top: 0.5%;
+  font-size: 90%;
+  background: white;
+ }
+ @media screen and (max-width: 600px){
+  h4{
+    font-size: 70%;
+    transform: scale(1);
+  }
+ }
+ h7{
+  font-size: 110%;
+ }
+ #content{
+  margin-left: 2%;
+ width: 80%;
+ color: white;
+ display: none;
+ }
+ h2{
+  margin-left: 40%;
+  color: black;
+ }
+ @media screen and (max-width: 600px){
+  h2{
+  font-size: 100%;
+}
+ }
+ h3{
+  margin-left: -2%;
+  color: black;
+ }
+  @media screen and (max-width: 600px){
+  h3{
+  font-size: 90%;
+}
+}
+h5{
+  font-size: 105%;
+}
+.para{
+  color: #25383C;
+}
+ @media screen and (max-width: 600px){
+  .para{
+  font-size: 90%;
+}
+}
+
+
+
+
+#page{
+  display: none;
+  
+}
+.white-space{
+         overflow-x: auto;
+    white-space: nowrap;
+}
+.options{
+  display: flex;
+ width: auto;
+ margin-left: 1%;
+ background: rgba(0, 0, 0, 0.2);
+width: auto;
+}
+
+.details{
+  font-size: 90%;
+  margin-left: 1%;
+}
+.options div{
+  padding: 1%;
+}
+.options img{
+    width: 15vw;
+  height: 15vw;
+    cursor: pointer;
+}
+.random{
+  width: 99%;
+  display: flex;
+}
+
+.backarrow{
+  background: white;
+  height: 19px;
+  width: 23px;
+  margin-top: 1%;
+  margin-left: 2vw;
+}
+.backarrow img{
+width: 20px;
+height: 19px;
+}
+
+
+
+.album1{
+display: flex;
+flex-wrap: wrap;
+width: 105%;
+overflow-x: auto;
+white-space: nowrap;
+margin-left: 1%;
+}
+.genre-container{
+  display: flex;
+flex-wrap: wrap;
+width: 105%;
+overflow-x: auto;
+white-space: nowrap;
+}
+.album0{
+  margin: 0.5%;
+}
+.details1{
+  display: none;
+}
+ .album{
+  width: 15vw;
+  height: 15vw;
+    cursor: pointer;
+}
+.avoid{
+  display: flex;
+}
+.overlay{
+  width: 99%;
+  height: 10%;
+  
+}
+.image-container img{
+  margin-top: -30%;
+  margin-left: 3vw;
+  width: 90vw;
+  height: 55vw;
+  position: relative;
+}
+.image-container1 img{
+  margin-top: 5%;
+  margin-left: 3vw;
+  width: 90vw;
+  height: 53vw;
+  position: relative;
+}
+.arrow{
+  transform: scale(1.0);
+   background: white;
+   width: 2%;
+   height: 2%;
+} 
+.arrow img{
+   width: 2%;
+   height: 2%;
+   margin-top: -1%;
+} 
+.arrow-left{
+    margin-top: 30%;
+    margin-right: -1%;
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+.arrow-right{
+margin-left: 96%;
+margin-top: -25%;
+margin-bottom: 30%;
+transition: 0.5s;
+}
+
+  .section{
+   
+  	display: flex;
+  }
+  .section ul{
+   margin-top: 1%;
+   padding: 1%;
+   font-size: 80%;
+        transform: scale(1); 
+   background: #EEEE;      
+  }
+  .section ul:hover{
+    border:1px solid black;
+  }
+  @media screen and (max-width: 600px){
+  	  .section ul{
+    font-size: 60%;
+    padding: 1%;
+    transform: scale(0.8);
+    }
+  }
+  @media screen and (max-width: 320px){
+      .section ul{
+    font-size: 50%;
+    padding: 1%;
+    transform: scale(0.8);
+    }
+  }
+  .section a{
+  	color: black;
+    text-decoration: none;
+    }
+     .img img{
+  width: 100%;
+  height: 40VW;
+ }
+
+    .slider{
+      position: relative;
+	width: 98%;
+	height: 50vh;
+	overflow: hidden;
+	margin-top: 2px;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition */
+   position: relative;
+}
+
+.slides{
+	width: 220%;
+	height: 100%;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+  position: relative;
+	width: 20%;
+	transition: 2s;
+}
+.text{
+  font-size: 90%;
+  width: 80%;
+}
+@media screen and (max-width: 600px){
+  .text{
+    font-size: 70%;
+    transform: scale(1);
+  }
+}
+.slide img{
+	width: 98%;
+	height: 100%;
+	opacity: 6;
+}
+
+.navigation-manual{
+	width: 100%;
+	display: flex;
+}
+
+.manual-btn:hover{
+	background: #800000;
+}
+#radio1:checked ~ .first{
+	margin-left: 0%;
+}
+#radio2:checked ~ .first {
+	margin-left: -20%;
+}
+#radio3:checked ~ .first {
+	margin-left: -40%;
+}
+#radio4:checked ~ .first {
+	margin-left: -60%;
+}
+#radio5:checked ~ .first {
+	margin-left: -80%;
+}
+#radio6:checked ~ .first {
+	margin-left: -100%;
+}
+
+
+.navigation-auto{
+		position: absolute;
+	width: 100%;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.navigation-auto div{
+	display: none;
+	border: 2px solid #800000;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 5s;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #80000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #80000;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #80000;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #80000;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+	background: #80000;
+}
+#radio6:checked ~ .navigation-auto .auto-btn5{
+	background: #80000;
+}
+
+
+     @media screen and (max-width: 600px ) {
+    .slider {
+      max-height: 30vw;
+      transform: scale(1); /* Zoom out for smaller screens */
+    }
+  }
+  .text {
+    position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+}
+.section1{
+margin-right: 2px;
+}
+
+.cards{
+  margin-left: 2vw;
+    margin-top: -2vw;
+    width: 100%;
+  }
+  .card {
+    display: flex;
+  }
+    .card div{
+    margin: 1vw;
+  }
+      .card1 {
+        width: 45vw;
+        height: 40vw;
+        margin-top: 0%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 2px;
+        
+    }
+    .card1 img{
+      opacity: 1;
+        margin-top: 2%;
+        margin-left: 4%;
+        width: 40vw;
+        height: 35vw;
+        margin-top: 2%;
+        font-size: 80%;
+        border-radius: 4px;
+        
+    }
+  /*  @media screen and (max-width: 400px){
+          .card1 img{
+        width: 33vw;
+        height: 30vw;
+        font-size: 80%; 
+    }
+    }
+    */
+    .card1:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  }
+        .card2 {
+        width: 45vw;
+        height: 40vw;
+        margin-top: 0%;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+        .card2 img{
+          opacity: 1;
+          margin-top: 2%;
+          margin-left: 4%;
+        width: 40vw;
+        height: 35vw;
+        margin-top: 2%;
+        font-size: 80%;
+        border-radius: 4px;
+        }
+         /*   @media screen and (max-width: 400px){
+          .card2 img{
+        width: 40vw;
+        height: 30vw;
+        font-size: 80%; 
+    }
+    }
+     */
+      .card2:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  }
+  .card1 h3 {
+    margin-top:-6%;
+    height: auto;
+    width: 87%;
+    margin-left: 5%;
+    color: black;
+     opacity: 1;
+     background: rgba(255, 255, 255, 0.5);
+     transform: scale(1.0);
+     font-size: 80%;
+  }
+  @media screen and (max-width: 600px){
+    .card1 h3{
+      font-size: 70%;
+      margin-top: -10%;
+    }
+  }
+    .card2 h3{
+    margin-top: -6%;
+    height: auto;
+    width: 87%;
+    margin-left: 5%;
+    color: black;
+     opacity: 1;
+     background: rgba(255, 255, 255, 0.5);
+     transform: scale(1.0);
+     font-size: 80%;
+  }
+    @media screen and (max-width: 600px){
+    .card2 h3{
+      font-size: 70%;
+      margin-top: -10%;
+    }
+  }
+    
+        .i{
+          color: whitesmoke;
+          margin-top: 2%;
+          background-color: rgba(0, 0, 0, 1.0);
+        }
+        .i h3{
+          margin-left: 40%;
+        }
+        .i  h3{
+            font-size: 80%;
+  font-style: italic;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .i h3{
+    font-size: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 450px){
+  .i h3{
+    font-size: 70%;
+    margin-left: 10%;
+  }
+}
+    footer{
+      margin-top: 10%;
+      width: 100%;
+      height: outo;
+      background-image: url("photos/imge3.jpg");
+      background-repeat: repeat-y;
+      background-size: cover;
+    }
+    @media screen and (max-width: 850px){
+      footer{
+      height: auto;
+      transform: scale(1.0);
+      }
+    }
+  .footer{
+    display: flex;
+  }
+  .links{
+   display: flex;
+   margin-top: -1%;
+  }
+  a{
+   color: white;
+   text-decoration: none;
+  }
+  .links div{
+     margin: 2vw;
+     font-size: 110%;
+     background: rgba(0, 0, 0, 0.8); 
+     cursor: pointer;
+     color: white;
+  }
+  @media screen and (max-width: 600px){
+    .links div{
+      font-size: 70%;
+    }
+  }
+    @media screen and (max-width: 450px){
+    .links div{
+      margin: 1vw;
+      font-size: 60%;
+    }
+  }
+  .social{
+    display: flex;
+    margin-left: 20vw;
+  }
+        @media screen and (max-width: 840px){
+    .social {
+      margin-left: 4vw;
+      transform: scale(1.0);
+    }
+  }
+      @media screen and (max-width: 600px){
+    .social {
+      margin-left: 1vw;
+      transform: scale(1.0);
+    }
+  }
+        @media screen and (max-width: 450px){
+    .social {
+      margin-left: -6vw;
+      transform: scale(1.0);
+    }
+  }
+
+    .social a{
+    display: flex;
+    font-size: 110%;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.8);
+  }
+      @media screen and (max-width: 840px){
+    .social a{
+      font-size: 90%;
+      transform: scale(1.0);
+    }
+  }
+    @media screen and (max-width: 600px){
+    .social a{
+      margin: -2vw;
+      font-size: 70%;
+      transform: scale(1.0);
+    }
+  }
+      @media screen and (max-width: 450px){
+    .social a{
+      font-size: 70%;
+      margin: -3.5vw;
+      transform: scale(1.0);
+    }
+  }
+        @media screen and (max-width: 350px){
+    .social a{
+      font-size: 60%;
+      margin: -4.5vw;
+      transform: scale(1.0);
+    }
+  }
+  .end{
+    display: flex;
+    color: whitesmokeA;
+    margin-top: 15%;
+    margin-left: 23vw;
+  }
+  @media screen and (max-width: 450px){
+    .end{
+      margin-left: 4%;
+    }
+  }
+  .dev{
+    display: flex;
+    color: whitesmoke;
+    margin-left: 15%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+   .dev a{
+    margin-top: 3%;
+    margin-left: 5%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+     /* @media screen and (max-width: 600px){
+    .dev a{
+      font-size: 70%;
+      transform: scale(1.0);
+    }
+  }
+   */
+        @media screen and (max-width: 600px){
+    .dev {
+      font-size: 60%;
+      transform: scale(1.0);
+    }
+  }
+   .end div{
+     margin: 5vw;
+  }
+  .cop{
+    margin-left: 40%;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  @media screen and (max-width: 450px){
+    .cop{
+      font-size: 60%;
+    }
+  }
+</style>
+<body>
+<header>
+  <div class="titles">
+	<div class="gallery"><div id="gallery"><p>Gallery</p></div></div>
+	    <div class="logo">
+<img src="photos/image5.png">
+    </div>
+	<div class="contact"><a href="tel:+2547 2332 1369"><p>Call US On: +254723321369</p></a></div>
+  </div>
+
+<nav class=".nav">
+<div class="section">
+		<ul><a href="index.html">HOME</a></ul>
+		<ul><div class="button" id="about1">ABOUT US</div></ul>
+		<ul class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown()">EVENTS</button>
+    <div class="dropdown-content" id="myDropdown">
+        <div class="option menu-details">Weddings</div>
+        <div class="option menu-details">Birthday Parties</div>
+        <div class="option menu-details">Dowry cremonies</div>
+        <div class="option menu-details">Burial Send Offs</div>
+        <div class="option menu-details">Baby Showers</div>
+        <div class="option menu-details">Corporate Meetings</div>
+        <div class="option menu-details">Home Catering</div>
+        <div class="option menu-details">Lunch Boxes</div>
+        <div class="option menu-details">Take Away Services</div>
+        <div class="option menu-details">Group Meetings</div>
+    </div>
+</ul>
+		    <ul class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown1()">SERVICES</button>
+    <div class="dropdown-content" id="myDropdown1">
+        <div class="option menu-details">Event Planning</div>
+        <div class="option menu-details">PUblic Address</div>
+        <div class="option menu-details">M C</div>
+        <div class="option menu-details">Deejay Service</div>
+        <div class="option menu-details">Tent's</div>
+        <div class="option menu-details">Chairs and Tables</div>
+        <div class="option menu-details">Decor Service</div>
+    </div>
+</ul>
+		    <ul class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown2()">MENU</button>
+    <div class="dropdown-content" id="myDropdown2">
+        <div class="option menu-details">Vitamins</div>
+        <div class="option menu-details">Salads</div>
+        <div class="option menu-details">Starches</div>
+        <div class="option menu-details">Protiens</div>
+        <div class="option menu-details">Bites</div>
+    </div>
+</ul>
+		<ul><a href="https://wa.link/lcr4tk" target="_blank">BOOK NOW</a></ul>
+	</div>
+</nav>
+</header>
+<script>
+    // JavaScript function to toggle the dropdown menu
+    function toggleDropdown() {
+        var dropdown = document.getElementById("myDropdown");
+        var dropdown1 = document.getElementById("myDropdown1");
+        var dropdown2 = document.getElementById("myDropdown2");
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+            dropdown1.style.display = "none";
+            dropdown2.style.display = "none";
+
+        }
+    }
+        function toggleDropdown1() {
+        var dropdown = document.getElementById("myDropdown1");
+        var dropdown1 = document.getElementById("myDropdown");
+        var dropdown2 = document.getElementById("myDropdown2");
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+            dropdown1.style.display = "none";
+            dropdown2.style.display = "none";
+        }
+    }
+        function toggleDropdown2() {
+        var dropdown = document.getElementById("myDropdown2");
+        var dropdown2 = document.getElementById("myDropdown");
+        var dropdown1 = document.getElementById("myDropdown1");
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+            dropdown1.style.display = "none";
+            dropdown2.style.display = "none";
+        }
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+            var dropdown = document.getElementById("myDropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            }
+        }
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+            var dropdown = document.getElementById("myDropdown1");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            }
+        }
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+            var dropdown = document.getElementById("myDropdown2");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            }
+        }
+    }
+</script>
+<div id="page">
+  <div class="white-space">
+  <div class="options">
+    <div id="genre1" class="genre1">
+    <div class="view" style="width: 15vw; height: 15vw; border: solid 1px white;">
+      <img src="photos/img1 (28).jpg">
+    </div>
+    <p class= details>Bites</p>
+  </div>
+  <div id="genre2" class="genre2">
+    <div class="view"style="width: 15vw; height: 15vw; border: solid 1px white;">
+      <img src="photos/img1 (10).jpg">
+    </div>
+    <p class= details>Vitamins</p>
+  </div>
+  <div id="genre3" class="genre3">
+    <div class="view" style="width: 15vw; height: 15vw; border: solid 1px white;">
+      <img src="photos/img1 (33).jpg">
+     
+    </div>
+    <p class= details>Starches</p>
+  </div>
+  <div id="genre4" class="genre4">
+    <div class="view" style="width: 15vw; height: 15vw; border: solid 1px white;">
+      <img src="photos/img1 (18).jpg">
+
+    </div>
+    <p class= details>salads</p>
+      </div>
+  <div id="genre5" class="genre5">
+    <div class="view" style="width: 15vw; height: 15vw; border: solid 1px white;">
+      <img src="photos/img1 (41).jpg">
+
+    </div>
+    <p class= details>Protiens</p>
+      </div>
+  <div id="genre6" class="genre6">
+    <div class="view" style="width: 15vw; height: 15vw; border: solid 1px white;">
+      <img src="photos/img1 (20).jpg">
+
+    </div>
+    <p class= details>Events</p>
+      </div>
+    </div>
+    </div>
+   <div class="backarrow" id="backarrow"><img src="photos/image6.png"></div>
+    <div id="album1" class="album1">
+    <div class="album0"><img class="album" src="photos/img1 (1).jpg" alt="Starches">
+      <div class="details1">Starches</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (2).jpg" alt="Starches">
+      <div class="details1">Decor Service chairs tables</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (3).jpg" alt="Starches">
+      <div class="details1">Starches</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (4).jpg" alt="Starches">
+      <div class="details1">Starches</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (5).jpg" alt="Starches">
+      <div class="details1">Starches</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (6).jpg" alt="Starches">
+      <div class="details1">Starches</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (7).jpg" alt="Protiens">
+      <div class="details1">Starches</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (8).jpg" alt="Vitamins salads">
+      <div class="details1">protiens</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (9).jpg" alt="Vitamins salads">
+      <div class="details1">Vitamins salads</div>
+
+    </div><div class="album0">
+        <img class="album" src="photos/img1 (10).jpg" alt="Events">
+      <div class="details1">Vitamins salads</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (11).jpg" alt="Events">
+      <div class="details1">Events Group Meetings</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (12).jpg" alt="Events">
+      <div class="details1">Events chairs tables Decor Service</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (13).jpg" alt="Events">
+      <div class="details1">tables Decor Service</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (14).jpg" alt="Events">
+      <div class="details1">starches</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (15).jpg" alt="Starches">
+      <div class="details1">Protiens</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (16).jpg" alt="Protiens">
+      <div class="details1">events tables Decoration</div></div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (17).jpg" alt="Events">
+      <div class="details1">Events Group Meetings</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (18).jpg" alt="Events">
+      <div class="details1">Vitamins salads</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (19).jpg" alt="Events">
+      <div class="details1">Events Burial Send Offs</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (20).jpg" alt="Vitamins salads">
+      <div class="details1">Events Event Planning Group Meetings</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (21).jpg" alt="Events">
+      <div class="details1">Events Event Planning Group Meetings Tents</div>
+      </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (22).jpg" alt="Events">
+      <div class="details1">proteins</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (23).jpg" alt="Events">
+      <div class="details1">bites</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (24).jpg" alt="Protiens">
+      <div class="details1">bites proteins</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (25).jpg" alt="Bites">
+      <div class="details1">protiens</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (26).jpg" alt="Bites">
+      <div class="details1">Bites starches</div>
+    </div>
+      <div class="album0"><img class="album" src="photos/img1 (27).jpg" alt="Protiens">
+        <div class="details1">vitamins salads</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (28).jpg" alt="Starches">
+      <div class="details1">bites</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (29).jpg" alt="Events">
+        <div class="details1">starches</div>
+      </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (30).jpg" alt="Bites">
+        <div class="details1">Bites Take Away Services Lunch Boxes Home Catering</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (31).jpg" alt="Starches">
+      <div class="details1">Event Planning</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (32).jpg" alt="lunch boxes">
+      <div class="details1">Corporate Meetings Baby Showers</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (33).jpg" alt="The master Mind">
+      <div class="details1">starches Dowry cremonies Deejay Service Tent's PUblic Address M C</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (34).jpg" alt="settingS">
+      <div class="details1">settingS</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (35).jpg" alt="settingS">
+      <div class="details1">Bites Take Away Services Lunch Boxes Home Catering</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (36).jpg" alt="settingS">
+      <div class="details1">Decor Service Weddings Birthday Parties Group Meetings Group Campings Corporate Meetings Corporate Meetings</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (37).jpg" alt="lunch boxes">
+      <div class="details1">vitamins salads</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (38).jpg" alt="settingS">
+      <div class="details1"> Group Meetings</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (39).jpg" alt="events">
+      <div class="details1">protiens</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (40).jpg" alt="decoration">
+      <div class="details1">protiens</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (41).jpg" alt="Vitamins salads">
+      <div class="details1">protiens</div>
+    </div>
+      <div class="album0">
+        <img class="album" src="photos/img1 (42).jpg" alt="Happy Clients">
+        <div class="details1">protiens</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (43).jpg" alt="Protiens">
+        <div class="details1">starches</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (44).jpg" alt="Protiens">
+        <div class="details1">Protiens</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (45).jpg" alt="Protiens">
+        <div class="details1">Protiens</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (46).jpg" alt="Protiens">
+        <div class="details1">Bites</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (47).jpg" alt="Vitamins salads">
+        <div class="details1">starches</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (48).jpg" alt="Starches">
+        <div class="details1">protiens</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (49).jpg" alt="Protiens">
+        <div class="details1">Bites Take Away Services Lunch Boxes Home Catering</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (50).jpg" alt="Protiens">
+        <div class="details1">Bites</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (51).jpg" alt="Bites">
+        <div class="details1">Bites</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (52).jpg" alt="Starches">
+        <div class="details1">starches</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (53).jpg" alt="Protiens">
+        <div class="details1">starches</div>
+      </div>
+        <div class="album0">
+          <img class="album" src="photos/img1 (54).jpg" alt="lunch boxes">
+          <div class="details1">Dowry cremonies Tent's Chairs and Tables Decor Service Event Planning </div>
+        </div>
+          <div class="album0">
+            <img class="album" src="photos/img1 (55).jpg" alt="Bites">
+          <div class="details1">Dowry cremonies Tent's Chairs and Tables Decor Service Event Planning </div>
+        </div>
+          <div class="album0">
+            <img class="album" src="photos/img1 (56).jpg" alt="Bites">
+          <div class="details1">prep</div>
+        </div>
+          <div class="album0">
+            <img class="album" src="photos/img1 (57).jpg" alt="Starches">
+          <div class="details1">Bites</div>
+        </div>
+          <div class="album0">
+            <img class="album" src="photos/img1 (58).jpg" alt="Starches">
+          <div class="details1">Starches</div>
+        </div>
+          <div class="album0">
+            <img class="album" src="photos/img1 (59).jpg" alt="Events">
+          <div class="details1">protiens</div>
+        </div>
+          <div class="album0"><img class="album" src="photos/img1 (60).jpg" alt="Events">
+            <div class="details1">protiens</div>
+          </div>
+          <div class="album0">
+            <img class="album" src="photos/img1 (61).jpg" alt="Protiens">
+            <div class="details1">salads vitamins</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (62).jpg" alt="Events">
+            <div class="details1">protiens</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (63).jpg" alt="Bites">
+            <div class="details1">salads vitamins</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (64).jpg" alt="Events">
+            <div class="details1">Events</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (65).jpg" alt="SettingS">
+              <div class="details1">SettingS</div>
+            </div>
+              <div class="album0">
+                <img class="album" src="photos/img1 (66).jpg" alt="Starches">
+            <div class="details1">Starches</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (67).jpg" alt="Protiens">
+            <div class="details1">Protiens</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (68).jpg" alt="Protiens">
+            <div class="details1">Protiens</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (69).jpg" alt="Vitamins salads">
+            <div class="details1">protiens</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (70).jpg" alt="preperations">
+            <div class="details1">SettingS Decor Service Chairs and Tables Event Planning Weddings Dowry cremonies mettings Birthday Parties</div>
+          </div>
+                      <div class="album0">
+              <img class="album" src="photos/img1 (71).jpg" alt="preperations">
+            <div class="details1">preparations</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (70).jpg" alt="Protiens">
+            <div class="details1">SettingS Decor Service Chairs and Tables Event Planning Weddings Dowry cremonies mettings Birthday Parties</div>
+          </div>
+            <div class="album0">
+              <img class="album" src="photos/img1 (72).jpg" alt="Vitamins salads">
+            <div class="details1">Team of Proffesionals</div>
+          </div>
+            <div class="album0"><img class="album" src="photos/img1 (73).jpg" alt="SettingS">
+              <div class="details1">SettingS Decor Service Chairs and Tables Event Planning Weddings Dowry cremonies mettings Birthday Parties</div>
+          </div>
+  </div>
+
+
+<div class="avoid" id="avoid"></div>
+  <div id="genre-container" class="genre-container"></div>
+  <div class="image-container1" id='image-container1'></div>
+
+       </div>
+<div class="img" id="img">
+  <img src="photos/img1 (72).jpg">
+  <h4>Our Team Of professionals</h4>
+</div>
+<div id="content">
+    <h2>About Us</h2>
+<p class="para">
+Welcome to <h7>Savoury Kitchens</h7>, where creativity meets expertise, and every event becomes an unforgettable experience. With a passion for perfection and an eye for detail, we are dedicated to transforming your dreams into reality.<br>
+</p>
+
+<h3>Who We Are:</h3>
+<p class="para">
+At <h7>Savoury Kitchens</h7>, we are more than just event planners and service providers; we are architects of moments, curators of memories, and creators of joy. Established with a vision to redefine event experiences, we have been delivering exceptional services in catering, event planning, public address, MC and DJ services, tent and furniture rentals, and exquisite decorations. Our team consists of dedicated professionals, each an expert in their field, united by the common goal of making your event extraordinary.<br>
+</p>
+
+<h3>Our Approach:</h3>
+<p class="para">
+We believe that every event is unique, deserving a tailor-made approach. Whether you're planning an intimate gathering or a grand celebration, we invest time in understanding your vision, preferences, and aspirations. Guided by your ideas, we add our creativity and expertise, curating a personalized event that mirrors your style and exceeds your expectations.<br>
+</p>
+
+<h3>Why Choose Us:</h3>
+<p class="para">
+Exquisite Creativity: Our team of skilled chefs, designers and decorators transform venues into captivating spaces, weaving magic into every corner.<br>
+Exceptional Service: From sumptuous cuisines to seamless event coordination, our services are marked by professionalism, precision, and a touch of elegance.<br>
+Reliability: We pride ourselves on our reliability and consistency. When you entrust your event to us, you can rest assured that every detail will be executed flawlessly.
+Client-Centric Approach: Your satisfaction is our priority. We listen attentively, communicate transparently, and adapt to your evolving needs, ensuring a stress-free planning process and a delightful event day.
+Let's Create Magic Together:
+Whether it's a wedding, corporate event, birthday party, or any special occasion, <h7>Savoury Kitchens</h7> is your trusted partner in crafting moments that last a lifetime. We invite you to explore our services, witness our creativity, and embark on a journey to turn your event dreams into cherished memories.<br>
+
+Thank you for considering <h7>Savoury Kitchens</h7> as your event partner. We look forward to the opportunity to serve you and make your event an extraordinary affair.<br>
+
+Warm regards,
+
+Boniface kamau kimani
+
+Founder, <h3>Savoury Kitchens</h3>
+<h3>Contact us on</h3><h5> +254723321369</h5>
+</p>
+</div>
+<section id="section">
+<div class="slider">
+<div class="slides">
+  <input type="radio" name="radio-btn" id="radio1">
+  <input type="radio" name="radio-btn" id="radio2">
+  <input type="radio" name="radio-btn" id="radio3">
+  <input type="radio" name="radio-btn" id="radio4">
+  <input type="radio" name="radio-btn" id="radio5">
+  <input type="radio" name="radio-btn" id="radio6">
+  
+
+     <div class="slide first">
+            <img src="photos/img1 (19).jpg" alt="">
+            <div class="text">Lunch Served @ a Burial ceremony</div>
+            </div>  
+    <div class="slide">
+      <img src="photos/img1 (55).jpg" alt="">
+      <div class="text">Tent & Chair Decorations</div>
+    </div>
+    <div class="slide">
+      <img src="photos/img1 (38).jpg" alt="">
+      <div class="text">Happy Clients At South C</div>
+    </div>
+    <div class="slide">
+      <img src="photos/img1 (20).jpg" alt="">
+      <div class="text">Lunch Settings</div>
+    </div>
+    <div class="slide">
+      <img src="photos/img1 (32).jpg" alt="">
+      <div class="text">Settings</div>
+    </div>
+    <div class="slide">
+      <img src="photos/img1 (73).jpg" alt="">
+      <div class="text">Table Decoration</div>
+    </div>
+
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+               
+                  </div>
+
+    </div>
+
+<div class="navigation-manual">
+  <label for="radio1" class="manual-btn"></label>
+   <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+     <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+    
+</div>
+</div>
+</div>
+
+	<script type="text/javascript">
+  var counter =1;
+  setInterval(function(){
+    document.getElementById('radio'+counter).checked=true;
+    counter++;
+    if (counter >5) {
+      counter=1;
+    }
+  }, 5000);
+</script>
+</section>
+<div class="section1" id="section1">
+    <div class="i"><h3>Some Of The Meals We Offer</h3></div>
+<div class="cards">
+
+  <div class="card">
+    <div class="card1"><img src="photos/img1 (65).jpg"><h3 class=".h3">beef stew</h3></img></div>
+    <div class="card2"><img src="photos/img1 (43).jpg"><h3 class=".h3">vegetable rice</h3></div>
+</div>
+<div class="card">
+    <div class="card2"><img src="photos/img1 (41).jpg"><h3 class=".h3">Grilled Nyama Choma</h3></div>
+    <div class="card1"><img src="photos/img1 (48).jpg"><h3 class=".h3">Dry Fried Chicken Drumsticks</h3></div>
+</div>
+<div class="card">
+    <div class="card1"><img src="photos/img1 (26).jpg"><h3 class=".h3">Potato Croquettes
+</h3></div>
+    <div class="card2"><img src="photos/img1 (28).jpg"><h3 class=".h3">Onion Rings</h3></div>
+</div>
+<div class="card">
+    <div class="card2"><img src="photos/img1 (3).jpg"><h3 class=".h3">Rice Pilau</h3></div>
+    <div class="card1"><img src="photos/img1 (5).jpg"><h3 class=".h3">Green Mukimo</h3></div>
+</div>
+<div class="card">
+    <div class="card2"><img src="photos/img1 (23).jpg"><h3 class=".h3">Samosa</h3></div>
+    <div class="card1"><img src="photos/img1 (8).jpg"><h3 class=".h3">Njehi Fried</h3></div>
+</div>
+<div class="card">
+    <div class="card1"><img src="photos/img1 (61).jpg"><h3 class=".h3">Mixed Vegetables</h3></div>
+    <div class="card2"><img src="photos/img1 (14).jpg"><h3 class=".h3">Buttered Rice</h3></div>
+</div>
+<div class="card">
+    <div class="card2"><img src="photos/img1 (35).jpg"><h3 class=".h3">Simple Lunch Box</h3></div>
+    <div class="card1"><img src="photos/img1 (29).jpg"><h3 class=".h3">Chapatis</h3></div>
+</div>
+<div class="card">
+    <div class="card1"><img src="photos/img1 (10).jpg"><h3 class=".h3">Fruit Platter</h3></div>
+    <div class="card2"><img src="photos/img1 (24).jpg"><h3 class=".h3">fish fillets</h3></div>
+</div>
+</div>
+</div>
+<footer id="footer">
+  <div class="footer">
+    <div class="links">
+     <div class="button" id="about2">About Us</div>
+     <div id="privacy"></div>
+     </div>
+    <nav class="social">
+      <ul><a href="https://www.facebook.com/profile.php?id=61551347581262"><img src="">facebook</a></ul>
+      <ul><a href="https://twitter.com/savourykitchens"><img src="">twitter</a></ul>
+      <ul><a href="https://wa.link/lcr4tk" target="_blank"><img src="">watsup</a></ul>
+      <ul><a href="https://instagram.com/savourykitchens.co.ke?igshid=OGY3MTU3OGY1Mw=="><img src="">instagram</a></ul>
+      <ul><a href="https://wa.link/lcr4tk" target="_blank">Book Now</a></ul>
+    </nav>
+  </div>
+  <div class="end">
+    <div class="cop">copyright© 2023</div>
+    <div class="dev">Developed by<a href="https://wa.link/31snou" target="_blank">clementdevs</a></div>
+  </div>
+</footer>
+</body>
+</html>
